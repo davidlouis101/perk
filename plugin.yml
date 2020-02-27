@@ -1,0 +1,44 @@
+name: perks
+author: ChampOfGames
+version: 1.0.0
+description: A Perks plugin for PocketMine-MP
+main: perks\Main
+api: [3.0.0,4.0.0]
+commands:
+  perk:
+    description: §4§lPerkSystem
+    usage: /perk [args]...
+    permission: perks.command
+
+permissions:
+  perk:
+    description: Allow using all Perks command
+    default: op
+    children:
+      perks.command:
+        description: Allow using /perks
+        default: op
+      perks.version:
+        description: Allow using command /slapper create
+        default: op
+      perks.help:
+        description: Allow viewing Perks help page
+        default: op
+      perks.break:
+        description: Allow using Perks break
+        default: op
+      perks.jump:
+        description: Allow using Perks jump
+        default: op
+      perks.atmung:
+        description: Allow using Perks atmung
+        default: op
+      perks.fire:
+        description: Allow using Perks fire
+        default: op
+      perks.damage:
+        description: Allow using Perks damage
+        default: op
+      perks.night:
+        description: Allow using Perks night
+        default: op
